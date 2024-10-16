@@ -13,7 +13,7 @@ local default_plugins = {
 
  {
     "leafo/magick",
-    lazy=false,
+    -- lazy=false,
       dependencies={
         "vhyrro/luarocks.nvim",
       },
@@ -137,7 +137,7 @@ local default_plugins = {
 
   {
     "neovim/nvim-lspconfig",
-    lazy=false,
+    -- lazy=false,
     init = function()
       require("core.utils").lazy_load "nvim-lspconfig"
     end,
@@ -250,7 +250,7 @@ local default_plugins = {
   -- Only load whichkey after all the gui
   {
     "folke/which-key.nvim",
-    lazy = false,
+    -- lazy = false,
     keys = { "<leader>", '"', "'", "`", "c", "v" },
     init = function()
       require("core.utils").load_mappings "whichkey"
@@ -366,7 +366,7 @@ local default_plugins = {
 
     {
     'benlubas/molten-nvim',
-    lazy=false,
+    -- lazy=false,
     dependencies = "willothy/wezterm.nvim",
     init = function()
       vim.g.molten_auto_open_output = false -- cannot be true if molten_image_provider = "wezterm"
