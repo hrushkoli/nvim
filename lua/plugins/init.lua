@@ -13,7 +13,7 @@ local default_plugins = {
 
  {
     "leafo/magick",
-    -- lazy=false,
+    lazy=false,
       dependencies={
         "vhyrro/luarocks.nvim",
       },
@@ -81,7 +81,7 @@ local default_plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    lazy=false,
+    -- lazy=false,
     init = function()
       require("core.utils").lazy_load "nvim-treesitter"
     end,
@@ -314,7 +314,7 @@ local default_plugins = {
 
   {
       'willothy/wezterm.nvim',
-      lazy=false,
+      -- lazy=false,
   },
   --
   --
