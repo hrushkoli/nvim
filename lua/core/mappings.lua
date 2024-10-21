@@ -15,7 +15,7 @@ M.general = {
 
     -- to delete word 
     ["<C-z>"] = { "<esc>dbi", "Delete Word Backwards" },
-    ["<C-x>"] = { "<esc>dwi", "Delete Word Forward" },
+    ["<C-x>"] = { "<C-o>dw", "Delete Word Forward" },   -- Delete the word forward without exiting insert mode
   },
 
   n = {

@@ -6,6 +6,7 @@ if custom_init_path then
   dofile(custom_init_path)
 end
 
+
 require("core.utils").load_mappings()
 
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -24,5 +25,6 @@ require "plugins"
 
 -- Toggle transparency
 vim.api.nvim_set_var('terminal_emulator', 'powershell')
+
 --vim.api.nvim_set_keymap('i', '<leader>m', '<Esc>:lua toggle_transparency()<CR>', { noremap = true, silent = true })
 
